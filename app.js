@@ -12,7 +12,7 @@ const container = document.querySelector('.container'),
       messageThree = document.querySelector('.game-three-result'),
       messageFour = document.querySelector('.game-four-result');
 
-      
+
 
       container.addEventListener('mousedown' ,function(e){
         if(e.target.className ==='fourth-color'){
@@ -23,7 +23,7 @@ const container = document.querySelector('.container'),
 
        else if(e.target.className ==='first-color' || e.target.className ==='second-color'  || e.target.className ==='third-color' ){
           guessesLeft = guessesLeft-1;
-          messageOne.textContent= `Wrong! you have ${guessesLeft} guesses left`;
+          messageOne.textContent= `Wrong! you have ${guessesLeft} guess left`;
           messageOne.style.color='red';
           messageOne.style.fontSize='25px';
 
@@ -52,7 +52,7 @@ const container = document.querySelector('.container'),
 
        else if(e.target.className ==='first-number' || e.target.className ==='second-number'  || e.target.className ==='fourth-number' ){
           guessesLeft = guessesLeft-1;
-          messageTwo.textContent= `Wrong! you have ${guessesLeft} guesses left`;
+          messageTwo.textContent= `Wrong! you have ${guessesLeft} guess left`;
           messageTwo.style.color='red';
           messageTwo.style.fontSize='25px';
           messageOne.textContent
@@ -83,7 +83,7 @@ const container = document.querySelector('.container'),
 
        else if(e.target.className ==='first-six' || e.target.className ==='third-eight'  || e.target.className ==='fourth-nine' ){
           guessesLeft = guessesLeft-1;
-          messageThree.textContent= `Wrong! you have ${guessesLeft} guesses left`;
+          messageThree.textContent= `Wrong! you have ${guessesLeft} guess left`;
           messageThree.style.color='red';
           messageThree.style.fontSize='25px';
           messageOne.textContent
@@ -115,7 +115,7 @@ const container = document.querySelector('.container'),
 
        else if(e.target.className ==='first-green' || e.target.className ==='second-yellow'  || e.target.className ==='fourth-blue' ){
           guessesLeft = guessesLeft-1;
-         messageFour.textContent= `Wrong! you have ${guessesLeft} guesses left`;
+         messageFour.textContent= `Wrong! you have ${guessesLeft} guess left`;
          messageFour.style.color='red';
          messageFour.style.fontSize='25px';
           messageOne.textContent
