@@ -63,6 +63,7 @@ const container = document.querySelector('.container'),
        if (guessesLeft===0){
           guessesLeft=guessesLeft+1;
           messageTwo.textContent='you lost, try again'; 
+          container.style.backgroundColor='red';
           setTimeout(clearError, 1000);
        }
 
